@@ -8,7 +8,7 @@
 - **Принципы:** SOLID, Clean Architecture
 - **Хранение данных:** UserDefaults
 - **Сеть:** URLSession + async/await
-- **API:** [FakeStoreAPI](https://fakestoreapi.com/)
+- **API:** [FakeStoreAPI](https://fakestoreapi.com/products)
 
 ## Архитектура проекта
 Проект следует принципам **Clean Architecture** и **MVVM**:
