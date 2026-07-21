@@ -91,8 +91,8 @@ struct MainView: View {
                                 
                                 .background(
                                     colorScheme == .dark ?
-                                    Color(.systemGray6) : // Темно-серый в темной теме
-                                    Color(.systemBackground) // Белый в светлой
+                                    Color(.systemGray6) :
+                                    Color(.systemBackground)
                                 )
                                 .cornerRadius(16)
                                 .overlay(
@@ -127,7 +127,7 @@ struct MainView: View {
                         Image(systemName: isDarkMode ? "moon.fill" : "sun.max.fill")
                             .foregroundColor(isDarkMode ? .yellow : .orange)
                             .font(.title3)
-                            .padding(.horizontal, 8) // Добавляем "воздух", чтобы не прилипало к краю
+                            .padding(.horizontal, 8)
                     }
                 }
                 
