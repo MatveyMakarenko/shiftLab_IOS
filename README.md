@@ -1,6 +1,6 @@
 # IOS Test Task - SHIFT Lab
 
-## 🛠 Стек и Технологии
+## Стек и Технологии
 - **Язык:** Swift
 - **UI Framework:** SwiftUI
 - **Минимальная версия iOS:** 15.0
