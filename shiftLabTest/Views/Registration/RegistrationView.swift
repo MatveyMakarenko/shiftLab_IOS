@@ -5,27 +5,24 @@ struct RegistrationView: View {
     @StateObject private var viewModel = RegistrationViewModel()
     var onSuccess: () -> Void
     
-    // Получаем текущую тему (светлая или темная)
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationView {
-            // Используем системный фон группы, он сам адаптируется под тему
             ScrollView {
                 VStack(spacing: 25) {
-                    // Заголовок
                     VStack(spacing: 8) {
                         Text("Регистрация")
                             .font(.system(size: 32, weight: .bold, design: .rounded))
-                            .foregroundColor(.primary) // .primary автоматически черный/белый
+                            .foregroundColor(.primary)
                         
                         Text("Создайте аккаунт")
                             .font(.subheadline)
-                            .foregroundColor(.secondary) // .secondary автоматически темно-серый/светло-серый
+                            .foregroundColor(.secondary)
                     }
                     .padding(.top, 20)
                     
-                    // Секция: Личные данные
+                    // Личные данные
                     VStack(alignment: .leading, spacing: 12) {
                         Text("ЛИЧНЫЕ ДАННЫЕ")
                             .font(.caption)
@@ -44,9 +41,9 @@ struct RegistrationView: View {
                                     .foregroundColor(.primary)
                             }
                             .padding()
-                            .background(Color(.systemBackground)) // Адаптивный фон карточки
+                            .background(Color(.systemBackground))
                             .cornerRadius(12)
-                            .shadow(color: Color.black.opacity(colorScheme == .dark ? 0 : 0.05), radius: 5, x: 0, y: 2) // Тень только для светлой темы
+                            .shadow(color: Color.black.opacity(colorScheme == .dark ? 0 : 0.05), radius: 5, x: 0, y: 2)
                             
                             if let error = viewModel.firstNameError {
                                 HStack {
@@ -97,7 +94,7 @@ struct RegistrationView: View {
                                 DatePicker("", selection: $viewModel.birthDate, displayedComponents: .date)
                                     .datePickerStyle(.compact)
                                     .labelsHidden()
-                                    .colorScheme(colorScheme) // Принудительно наследуем тему
+                                    .colorScheme(colorScheme)
                             }
                             .padding()
                             .background(Color(.systemBackground))
@@ -119,6 +116,7 @@ struct RegistrationView: View {
                         .padding(.horizontal, 4)
                     }
                     
+                    // Безопасность
                     VStack(alignment: .leading, spacing: 12) {
                         Text("БЕЗОПАСНОСТЬ")
                             .font(.caption)
@@ -182,7 +180,6 @@ struct RegistrationView: View {
                     }
                     
                     // Кнопка регистрации
-                    // Кнопка регистрации
                     Button(action: {
                         viewModel.register()
                         if viewModel.isFormValid {
@@ -197,7 +194,6 @@ struct RegistrationView: View {
                             .padding()
                     }
                     .disabled(!viewModel.isFormValid)
-                    // 👇 ВОТ ПРАВИЛЬНОЕ РЕШЕНИЕ ЧЕРЕЗ if/else 👇
                     .background {
                         if viewModel.isFormValid {
                             LinearGradient(
@@ -219,7 +215,7 @@ struct RegistrationView: View {
                 }
                 .padding(.horizontal)
             }
-            .background(Color(.systemGroupedBackground)) // Адаптивный фон всего экрана
+            .background(Color(.systemGroupedBackground))
             .navigationBarTitleDisplayMode(.inline)
         }
     }
