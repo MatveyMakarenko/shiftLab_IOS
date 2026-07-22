@@ -47,7 +47,7 @@
 
 ## Визуализация:
 ### Экран регистрации
-<div align="center" gap="10px">
+<div align="center" margin="10px">
   <img width="300" alt="Экран регистрации" src="https://github.com/user-attachments/assets/2658617e-6e5e-4594-8ca5-5921b1f387ce" />
   <img width="300" alt="Экран регистрации" src="https://github.com/user-attachments/assets/f8905e71-02a5-427f-a8b5-8295c62789af" />
 </div>
