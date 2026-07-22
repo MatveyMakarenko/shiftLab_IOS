@@ -48,8 +48,8 @@
 ## Визуализация:
 ### Экран регистрации
 <div align="center">
-  <img width="300" alt="Экран регистрации" src="https://github.com/user-attachments/assets/37429f81-9a75-4366-9e34-e73c2d90f276" />
-  <img width="300" alt="Экран регистрации" src="https://github.com/user-attachments/assets/f01ce87b-6183-45bd-ac19-90b34583229f" />
+  <img width="300" alt="Экран регистрации" src="https://github.com/user-attachments/assets/2658617e-6e5e-4594-8ca5-5921b1f387ce" />
+  <img width="300" alt="Экран регистрации" src="https://github.com/user-attachments/assets/f8905e71-02a5-427f-a8b5-8295c62789af" />
 </div>
   
 ### Главный экран
@@ -68,5 +68,6 @@ open shiftLabTest.xcodeproj
 В верхней панели Xcode выберите симулятор (например, iPhone 16 pro)
 ### 5. Запустите проект
 Нажмите кнопку Run в левом верхнем углу Xcode (или сочетание клавиш CMD + R)
+
 
 
