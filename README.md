@@ -47,7 +47,19 @@
 
 ## Визуализация:
 ### Экран регистрации
-<img width="422" height="797" margin="auto 0" alt="image" src="https://github.com/user-attachments/assets/37429f81-9a75-4366-9e34-e73c2d90f276" />
+<img width="422" height="797"  alt="image" src="https://github.com/user-attachments/assets/37429f81-9a75-4366-9e34-e73c2d90f276" />
   
 ### Главный экран
 <img width="400" height="794" alt="Снимок экрана 2026-07-21 в 18 24 04" src="https://github.com/user-attachments/assets/31ce55ff-7f95-42e2-9695-cc1d99539cbd" />
+
+## Как запустить?
+### 1. Клонируйте репозиторий
+git clone https://github.com/MatveyMakarenko/shiftLab_IOS.git
+### 2. Перейдите в папку проекта
+cd shiftLab_IOS
+### 3. Откройте проект в Xcode
+open shiftLabTest.xcodeproj
+### 4. Выберите устройство для запуска
+В верхней панели Xcode выберите симулятор (например, iPhone 16 pro)
+### 5. Запустите проект
+Нажмите кнопку Run в левом верхнем углу Xcode (или сочетание клавиш CMD + R)
