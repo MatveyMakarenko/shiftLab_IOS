@@ -49,6 +49,7 @@
 ### Экран регистрации
 <div display="flex" justify-content="center">
 <img width="422" height="797" alt="image" src="https://github.com/user-attachments/assets/37429f81-9a75-4366-9e34-e73c2d90f276" />
-<div/>
+<div /> 
+  
 ### Главный экран
 <img width="400" height="794" alt="Снимок экрана 2026-07-21 в 18 24 04" src="https://github.com/user-attachments/assets/31ce55ff-7f95-42e2-9695-cc1d99539cbd" />
