@@ -13,12 +13,20 @@ final class RegistrationViewModel: ObservableObject {
     var firstNameError: String? {
         guard !firstName.isEmpty else { return nil }
         if firstName.count < 2 { return "Имя должно содержать минимум 2 символа" }
+        let allowedCharacters = CharacterSet.letters.union(.whitespaces)
+        if firstName.unicodeScalars.contains(where: { !allowedCharacters.contains($0) }) {
+            return "Имя может содержать только буквы"
+        }
         return nil
     }
     
     var lastNameError: String? {
         guard !lastName.isEmpty else { return nil }
         if lastName.count < 2 { return "Фамилия должна содержать минимум 2 символа" }
+        let allowedCharacters = CharacterSet.letters.union(.whitespaces)
+        if lastName.unicodeScalars.contains(where: { !allowedCharacters.contains($0) }) {
+            return "Фамилия может содержать только буквы"
+        }
         return nil
     }
     
