@@ -52,7 +52,9 @@
 </div>
   
 ### Главный экран
-<img width="400" height="794" alt="Снимок экрана 2026-07-21 в 18 24 04" src="https://github.com/user-attachments/assets/31ce55ff-7f95-42e2-9695-cc1d99539cbd" />
+<div align="center">
+  <img width="300" alt="Главный экран" src="https://github.com/user-attachments/assets/31ce55ff-7f95-42e2-9695-cc1d99539cbd" />
+</div>
 
 ## Как запустить?
 ### 1. Клонируйте репозиторий
